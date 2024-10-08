@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>List of Albums</h1>
+    <ul>
+        {% for album in albums %}
+            <li>{{ album.title }} by {{album.artiste_name}} released on {{album.Release_date}}</li>
+        {% endfor %}
+    </ul>
+
+
+</body>
+</html>
